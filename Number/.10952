@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, N = 0;
+    int c[100] = {0,};
+    
+    for(int i=0;;i++){
+        cin >> a >> b;
+        c[i] = a+b;
+        if(a==0 && b==0)
+            break;
+        N++;
+    }
+    for(int i=0;i<N;i++)
+        cout << c[i] << endl;
+        
+    return 0;
+}
