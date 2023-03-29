@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a = 0;
+    
+    cin >> a;
+    
+    int b[a], c[a], sum[a] = {0,};
+    
+    for(int i=1;i<=a;i++){
+        cin >> b[i] >> c[i];
+        sum[i] = b[i]+c[i];
+    }
+    for(int i=1;i<=a;i++){
+        cout << "Case #"<< i <<": "<< b[i] <<" + "<< c[i] <<" = "<< sum[i] << endl;
+    }
+
+    return 0;
+}
