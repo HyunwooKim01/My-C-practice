@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b = 0;
+    
+    cin >> a; 
+    cin >> b;
+    
+    int c, d, e = 0;
+    
+    c = b%10 ;
+    d = (b%100 - c)/10 ;
+    e = b/100 ; 
+    
+    
+    cout << a*c << endl;
+    cout << a*d << endl;
+    cout << a*e << endl;
+    cout << a*b << endl;
+
+    return 0;
+}
