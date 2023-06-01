@@ -1,0 +1,27 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    
+    ofstream fout ("b.txt");
+    ifstream fin ("a.txt");
+    
+    if(!fout || !fin){  cerr << "파일 입출력에 실패하였습니다."; return 0;}
+    
+    int num[10];
+    for(int i = 0; i < 10; i++){
+        fin >> num[i];
+    }
+    for (int i = 9; i >= 0; i--){
+        fout << num[i] << "\n";
+    }
+    
+    fin.close();
+    fout.close();
+    
+    cout << "b.txt를 확인하시오.";
+    
+    
+    return 0;
+}
